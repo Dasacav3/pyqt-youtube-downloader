@@ -13,6 +13,8 @@ class UI(QMainWindow, YT_Downloader):
         super(UI, self).__init__()
         uic.loadUi('gui.ui', self)
 
+        self.setWindowIcon(QtGui.QIcon('logo.png'))
+        
         self.youtube_dl = YT_Downloader()
 
         self.directory = ""
