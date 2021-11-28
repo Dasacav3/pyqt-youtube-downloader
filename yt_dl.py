@@ -28,11 +28,6 @@ class YT_Downloader():
             ydl_opts = {
                 'format': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best',
                 'outtmpl': path + '%(title)s.%(ext)s',
-                'postprocessors': [{
-                    'key': 'FFmpegExtractAudio',
-                    'preferredcodec': 'mp3',
-                    'preferredquality': '192',
-                }],
             }
             with youtube_dl.YoutubeDL(ydl_opts) as ydl:
                 ydl.download([url])
@@ -62,11 +57,6 @@ class YT_Downloader():
             ydl_opts = {
                 'format': 'bestvideo[ext=webm]+bestaudio[ext=webm]/best[ext=webm]/best',
                 'outtmpl': path + '%(title)s.%(ext)s',
-                'postprocessors': [{
-                    'key': 'FFmpegExtractAudio',
-                    'preferredcodec': 'mp3',
-                    'preferredquality': '192',
-                }],
             }
             with youtube_dl.YoutubeDL(ydl_opts) as ydl:
                 ydl.download([url])
@@ -81,7 +71,7 @@ class YT_Downloader():
                 'outtmpl': path + '%(title)s.%(ext)s',
                 'postprocessors': [{
                     'key': 'FFmpegExtractAudio',
-                    'preferredcodec': 'ogg',
+                    'preferredcodec': 'vorbis',
                     'preferredquality': '192',
                 }],
             }
