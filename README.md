@@ -9,14 +9,13 @@ This is a GUI application that allows you to download videos from Youtube.
 </div>
 
 ## Features
-- Download videos from Youtube in MP3 format
-- Download videos from Youtube in MP4 format
+- Download videos from Youtube in differents formats (mp4, mp3, webm, ogg, aac, m4a)
 - Choose the quality of the video or the audio (high, medium, low)
 - Choose the location of the downloaded files
 
 ## Installation
 - Install Python 3.6.5 or higher
-- Run next command: `pip install youtube_dl` and `pip install PyQt5`
+- Run next command: `pip install -r requirements.txt`
 - Now, you can run the application
 
 Enjoy this application!
